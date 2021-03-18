@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manager Page</title>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" href = "./styles/welcome.css">
+
+    </head>
+    <body>
+        <div class ="container">
+            <div id = "message">
+                <h1>This is the manager portal</h1>
+            </div>
+            <div id = "container request-details">
+
+            </div>
+
+            <div>
+                <form id = "managermenu" method="GET">
+                    <input type = "submit" id = "viewpend" formaction="http://localhost:8080/ERSys/api/request/" value="View Requests">
+                    <input type="submit" id="viewemployees" formaction="/ERSys/api/view/users" value="View All Employees">
+                </form>
+            </div>
+
+            <div>
+                <div>
+                    <form id = "logout" method = "GET" action = "/ERSys/api/logout" > 
+                        <button id="logoutbtn">Log Out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src ="./scripts/managereq.js"></script>
+    </body>
+</html>

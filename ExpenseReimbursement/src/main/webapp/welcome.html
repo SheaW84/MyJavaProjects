@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ERSys Login Portal</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../styles/welcome.css">
+    </head>
+    <body>
+        
+            <div id = "message">
+                <h1>Welcome back user!</h1>
+            </div>
+
+            <div class = "employee-details">
+                
+                 
+            </div>
+            <div>
+                <form id = "employeemenu" method="GET">
+                    
+                    <input type = "submit" id = "viewpend" formaction="/ERSys/api/request/menu" value ="Request Menu">
+
+
+                </form>
+            </div>
+
+            <div>
+                <form id = "logout" method = "GET" action = "/ERSys/api/logout" > 
+                    <button id="logoutbtn">Log Out</button>
+                </form>
+            </div>
+        
+        <script src="../scripts/welcome.js"></script>
+
+
+    </body>
+</html>

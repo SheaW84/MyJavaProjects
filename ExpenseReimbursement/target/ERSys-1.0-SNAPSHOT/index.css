@@ -1,0 +1,32 @@
+h1 {
+    text-align: left;
+
+}
+
+h2 {
+    text-align: left;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: 15em;
+}
+#form{
+    display:flex;
+    flex-direction: column;
+    padding: 5em;
+    size: 5em;
+    border:1px;
+}
+
+#email{
+    padding: 1em;
+    size: 5em;
+}
+
+#password{
+    padding:1em;
+    size: 5em;
+}

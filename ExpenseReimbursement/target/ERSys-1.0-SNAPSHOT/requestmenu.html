@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <title> ERSysWARE - Request Menu</title>
+    <link rel="stylesheet" href="../styles/welcome.css">
+</head>
+<body> 
+    <div class = "container">
+        <div id = "message">
+            <h1>This is the Reimbursement Request menu</h1>
+            <h2>As an Employee, you have the options to submit or view your requests</h2>
+        </div>
+        <div id = "request menu">
+            <form id = "request form">
+                <input type ="submit" id="newrequest" name="newrequest" formaction="/ERSys/api/request/submit" value="New Request">
+                <input type = "submit" id = "viewpend" formaction="/ERSys/api/request/pending/view" value ="View Pending Requests">
+
+            </form>
+
+        </div>
+        <div>
+            <form id = "logout" method = "GET" action = "/ERSys/api/logout" > 
+                <button id="logoutbtn">Log Out</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

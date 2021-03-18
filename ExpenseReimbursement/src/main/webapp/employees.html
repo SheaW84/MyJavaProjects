@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Information Page</title>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" href = "./styles/request.css">
+
+    </head>
+    <body>
+        <div class ="container">
+            <div id = "message">
+                <h1>Employees and their Managers</h1>
+            </div>
+            <div id = "employee-details">
+                <table id = "employee-table" class = "table">
+                    <tbody>
+                    <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Mgr First</th>
+                        <th>Mgr Last</th>
+                        <th>Mgr Email</th>
+                    </tr>    
+                    
+                    
+                    
+                    </tbody>
+                </table>
+    
+
+            </div>
+
+            <div id = "login">
+                <div>
+                    <form id = "logout" method = "GET" action = "/ERSys/api/logout" > 
+                        <button id="logoutbtn">Log Out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src ="./scripts/employees.js"></script>
+    </body>
+</html>

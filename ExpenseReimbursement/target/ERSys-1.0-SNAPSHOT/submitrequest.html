@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ERSys - New Request</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/welcome.css">
+</head>
+<body>
+    <div id = container>
+        <div>
+            <h1>Please fill out the required information below</h1>
+        </div>
+        <div>
+            <form id = "request" method="post" action="http://localhost:8080/ERSys/api/request/new">
+                <input type ="text" name = "reason" placeholder="Reason"/>
+                <input type = "text" name ="amount" placeholder="Amount"/>
+                <input type = "email" name ="email" placeholder="Email Address"/>
+                <button id ="submit">Submit Request</button>
+            </form>
+            <form>
+
+            <form target = "_blank" action = "upload-file" method = "post" enctype = "multipart/form-data">
+            <table>
+                <td>Upload Reciept Image</td>
+                <td><input type = "file" name = "myFile" id = "myFileField"></td>
+                <td><button type = "submit" id = "submitrequest" onlcick ="window.location.href =
+                    'http://localhost:8080/ERSys/api/request/new'">Submit Reciept</td>
+            </table>
+            
+            </form>
+        </div>
+        <div>
+            <form id = "logout" method = "GET" action = "/ERSys/api/logout" > 
+                <button id="logoutbtn">Log Out</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

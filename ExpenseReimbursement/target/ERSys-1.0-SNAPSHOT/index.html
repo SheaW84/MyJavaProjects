@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERSysWARE</title>
+    <link rel = "stylesheet" href = "index.css"/>
+</head>
+<body>
+
+
+<div class ="container">
+    <div id = "message">
+        <h1>Welcome to ERSysWARE!</h1>
+        <h2>The Company's Expense Reimbursement Portal</h2>
+        <h2>Please provide your credentials below</h2>
+    </div>
+
+    <div id = "login">
+        <form id = "form" method="post" action="/ERSys/api/login">
+            <input id ="email" type="email" placeholder="Email" name="email" required/> <!-- The required attribute 0-->
+            <input id ="password" type="password" placeholder="Password" name="password" required/>
+            <button>Login</button>
+            <input type="submit" id = "manager" name="manager" formaction = "/ERSys/api/login/man" value = "Management Login">
+            
+
+        </form>
+    </div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>

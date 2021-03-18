@@ -1,0 +1,12 @@
+.request-details{
+    display: grid;
+    grid-template-columns: 20em 20em 20em 20em;
+    border: 3px;
+    border-style:dashed;
+
+
+}
+
+#message {
+    text-align: center;
+}

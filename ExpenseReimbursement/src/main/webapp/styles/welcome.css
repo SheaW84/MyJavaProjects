@@ -1,0 +1,17 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 20em 20em 20em 20em;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+body{
+
+   background-color: white; 
+}
+
+

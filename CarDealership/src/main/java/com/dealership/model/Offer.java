@@ -1,6 +1,5 @@
 package com.dealership.model;
 
-import com.dealership.page.UserPage;
 
 import java.util.Objects;
 

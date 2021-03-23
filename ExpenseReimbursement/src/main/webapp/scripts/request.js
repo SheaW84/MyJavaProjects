@@ -11,7 +11,7 @@ function getPending(){
 
     xhr.onreadystatechange = function(){
 
-        if(xhr.readyState === 4  & xhr.status=== 200){
+        if(xhr.readyState === 4 & xhr.status=== 200){
             let requests = JSON.parse(xhr.response)
             console.log(requests)
             

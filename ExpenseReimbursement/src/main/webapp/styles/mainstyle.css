@@ -1,0 +1,12 @@
+.employee-details{
+    border: 3px;
+    border-style:dashed;
+    padding: 5px;
+    table-layout: auto;
+    
+
+}
+
+#message {
+    text-align: center;
+}

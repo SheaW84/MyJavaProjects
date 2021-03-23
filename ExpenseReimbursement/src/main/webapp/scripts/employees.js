@@ -4,12 +4,12 @@ function getEmployeeInfo(){
 
     let xhr = new XMLHttpRequest()
 
-    xhr.open('GET', 'http://localhost:8080/ERSys/api/user/all')
+    xhr.open('GET','http://localhost:8080/ERSys/api/user/all')
     xhr.send()
 
     xhr.onreadystatechange = function(){
 
-        if(xhr.readyState === 4  & xhr.status=== 200){
+        if(xhr.readyState === 4 & xhr.status=== 200){
 
             let employees = JSON.parse(xhr.response)
 
@@ -42,7 +42,6 @@ function getEmployeeInfo(){
 
                 employeeBody.append(newEmployee)  
             }          
-            
         }
     }
 }

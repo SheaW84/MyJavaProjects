@@ -25,7 +25,6 @@ public class ERSysHelper {
                 RequestDispatcher viewdispatcher = request.getRequestDispatcher("/employees.html");
                 viewdispatcher.forward(request,response);
 
-
             case "/user/all":
                 response.setStatus(200);
                 return new EmployeeService().findAll();
@@ -51,8 +50,6 @@ public class ERSysHelper {
             case "/request/submit":
             	RequestDispatcher dispatcher = request.getRequestDispatcher("/submitrequest.html");
                 dispatcher.forward(request,response);
-           
-
 
             case "/request/pending/view":
 
@@ -64,7 +61,6 @@ public class ERSysHelper {
                 String email = hs.getAttribute("email").toString();
                 Employee employee = new EmployeeService().findByEmail(email);
                 return new ReimbursementService().findByUser(employee);
-
 
             case "/request/pending/man":
                 response.setStatus(200);

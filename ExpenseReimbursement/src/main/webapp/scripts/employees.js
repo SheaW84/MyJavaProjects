@@ -2,7 +2,7 @@ let employeeBody = document.querySelector('#employee-table > tbody')
 
 function getEmployeeInfo(){
 
-    let xhr = new XMLHttpRequest()
+    let xhr = new XMLHttpRequest();
 
     xhr.open('GET','http://localhost:8080/ERSys/api/user/all')
     xhr.send()
@@ -12,6 +12,7 @@ function getEmployeeInfo(){
         if(xhr.readyState === 4 & xhr.status=== 200){
 
             let employees = JSON.parse(xhr.response)
+            console.log(employees)
 
             for(let e of employees){
 
@@ -46,6 +47,6 @@ function getEmployeeInfo(){
     }
 }
 
-window.onload = () =>{
+window.onload=()=>{
     getEmployeeInfo() 
 }

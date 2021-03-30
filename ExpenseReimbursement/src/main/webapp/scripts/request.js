@@ -43,6 +43,6 @@ function getPending(){
     }
 }
 
-window.onload = () =>{
+window.onload=()=>{
     getPending()
 }
